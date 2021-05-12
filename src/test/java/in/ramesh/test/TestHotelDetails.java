@@ -12,7 +12,7 @@ public class TestHotelDetails {
 	@Test
 	public void testgetHotels(){
 		List<String> hotelList = HotelDetails.getHotels();
-		assertEquals(3,hotelList.size());
+		assertEquals(5,hotelList.size());
 		
 	}
 }

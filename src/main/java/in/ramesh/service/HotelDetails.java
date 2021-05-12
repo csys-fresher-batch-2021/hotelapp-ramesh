@@ -12,9 +12,20 @@ public class HotelDetails {
 		hotelList.add("Sky Lite");
 		hotelList.add("Raddison Blu");
 		hotelList.add("Blue ice");
+		hotelList.add("Orbis");
+		hotelList.add("Vijay Elanza");
+		
 		}
 	public static List<String> getHotels(){
 		return hotelList;
 	}
+//	public static void addHotelType(String newHotel) {
+//			hotelList.add("Sky Lite");
+//			hotelList.add("Raddison Blu");
+//			hotelList.add("Blue ice");
+//			hotelList.add("Orbis");
+//			hotelList.add("Vijay Elanza");
+//		
+//	}
 
 }
