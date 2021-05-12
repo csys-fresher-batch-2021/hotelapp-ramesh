@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HotelDetails {
+	private HotelDetails() {
+		
+	}
 	
 
-	private static List<String> hotelList = new ArrayList<String>();
+	private static List<String> hotelList = new ArrayList<>();
 	
 	static {
 		hotelList.add("Sky Lite");
@@ -19,13 +22,6 @@ public class HotelDetails {
 	public static List<String> getHotels(){
 		return hotelList;
 	}
-//	public static void addHotelType(String newHotel) {
-//			hotelList.add("Sky Lite");
-//			hotelList.add("Raddison Blu");
-//			hotelList.add("Blue ice");
-//			hotelList.add("Orbis");
-//			hotelList.add("Vijay Elanza");
-//		
-//	}
+
 
 }
