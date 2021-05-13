@@ -3,13 +3,13 @@ package in.ramesh.service;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HotelDetails {
-	private HotelDetails() {
+public class HotelDetailService {
+	private HotelDetailService() {
 		
 	}
 	
 
-	private static List<String> hotelList = new ArrayList<>();
+	private static final List<String> hotelList = new ArrayList<>();
 	
 	static {
 		hotelList.add("Sky Lite");

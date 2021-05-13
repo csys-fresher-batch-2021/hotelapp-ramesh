@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@page import="in.ramesh.service.HotelDetails"%>
+    <%@page import="in.ramesh.service.HotelDetailService"%>
     <%@page import="java.util.List"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,7 @@
 		</thead>
 		<tbody>
 		<%
-		List<String> hotelType=HotelDetails.getHotels();
+		List<String> hotelType=HotelDetailService.getHotels();
 				int i=0;
 				for(String hotel: hotelType) {
 			i++;
