@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="ISO-8859-1">
-<title>Room Booking</title>
+<title>Hotel Room Booking</title>
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>

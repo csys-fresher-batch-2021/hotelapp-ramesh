@@ -27,7 +27,7 @@ public class AdminLoginServlet extends HttpServlet {
 		if (isValid) {
 			HttpSession session = request.getSession();
 			session.setAttribute("LOGGED_IN_Admin", username);
-			response.sendRedirect("#");
+			response.sendRedirect("TypeOfHotel.jsp");
 
 		} else {
 			String errorMessage = "Invalid Credentials";

@@ -21,6 +21,35 @@ String username = (String) session.getAttribute("LOGGED_IN_USER");
 
 
 
+
+				<%
+				if (adminName != null) {
+				%>
+				<li class="nav-item"><a class="nav-link"
+					href="TypeOfHotel.jsp">Hotel Types</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="SearchHotelDetails.jsp">Search Payment Status</a></li>
+				<%
+				}
+				%>
+				<%
+				if (username != null) {
+				%>
+
+				<li class="nav-item active"><a class="nav-link"
+					href="BillCalculator.jsp">Bill Generator</a></li>
+<li class="nav-item active"><a class="nav-link"
+					href="MyBillServlet">My Bills</a></li>
+
+				<%
+				}
+				%>
+				<li class="nav-item"><a class="nav-link"
+					href="displayHotelTypes.jsp">Hotel Details</a></li>
+			</ul>
+
+			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
 				<%
 				if (username == null && adminName == null) {
 				%>
@@ -39,7 +68,7 @@ String username = (String) session.getAttribute("LOGGED_IN_USER");
 						<%=adminName%></a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="AdminLogoutServlet">Logout</a></li>
+					href="AdminLogout">Logout</a></li>
 
 				<%
 				} else {

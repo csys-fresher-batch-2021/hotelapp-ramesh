@@ -1,0 +1,32 @@
+package in.ramesh.validator;
+
+public class HotelStringValidator {
+	private HotelStringValidator() {
+
+	}
+
+	/**
+	 * // String validation is performed // insertion of numbers is hotel type
+	 * is checked
+	 * 
+	 * @param newRecidencyName
+	 * @return
+	 */
+	public static boolean stringValidation(String username) {
+
+		boolean isValidService = true;
+
+		if (username.length() == 0 || username.trim().equals("")) {
+			isValidService = false;
+		}
+
+		for (int index = 0; index < username.length(); index++) {
+			if (username.charAt(index) >= '0' && username.charAt(index) <= '9') {
+				isValidService = false;
+
+			}
+		}
+		return isValidService;
+	}
+
+}

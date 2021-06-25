@@ -1,10 +1,10 @@
 package in.ramesh.service;
 
 import in.ramesh.exception.ValidationException;
+
 import in.ramesh.validator.LoginValidation;
 
 public class UserLoginService {
-
 	private UserLoginService() {
 
 	}

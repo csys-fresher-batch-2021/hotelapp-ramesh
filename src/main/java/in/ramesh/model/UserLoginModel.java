@@ -1,7 +1,8 @@
 package in.ramesh.model;
 
-public class UserLoginModel {
+import in.ramesh.model.UserLoginModel;
 
+public class UserLoginModel {
 	private String username;
 	private String password;
 

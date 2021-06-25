@@ -30,7 +30,7 @@ public class UserLoginServlet extends HttpServlet {
 		if (flag) {
 			HttpSession session = request.getSession();
 			session.setAttribute("LOGGED_IN_USER", username);
-			response.sendRedirect("#");
+			response.sendRedirect("BillCalculator.jsp");
 
 		} else {
 			String errorMessage = "Invalid Login Credentials";
